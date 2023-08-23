@@ -6,9 +6,11 @@ services:
     image: nginx:latest
     container_name: nginx
     volumes:
-        - $PWD/nginx/default.conf:/etc/nginx/conf.d/default.conf
-        - $PWD/certs/localhost.crt:/root/ssl/localhost.crt
-        - $PWD/certs/localhost.key:/root/ssl/localhost.key
+        - $PWD/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+        - $PWD/certs/dido.zapto.org/fullchain1.pem:/root/ssl/localhost.pem:ro
+        - $PWD/certs/dido.zapto.org/privkey1.pem:/root/ssl/localhost-key.pem:ro
+#        - $PWD/certs/localhost.crt:/root/ssl/localhost.crt
+#        - $PWD/certs/localhost.key:/root/ssl/localhost.key
     ports:
         - "80:80"
         - "443:443"

@@ -265,11 +265,11 @@
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
         "*",
-        "https://localhost/bankloan/*"
+        "https://dido.zapto.org/bankloan/*"
       ],
       "webOrigins": [
         "*",
-        "https://localhost/bankloan"
+        "https://dido.zapto.org/bankloan"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -282,7 +282,7 @@
       "frontchannelLogout": true,
       "protocol": "openid-connect",
       "attributes": {
-        "post.logout.redirect.uris": "https://localhost/bankloan##*",
+        "post.logout.redirect.uris": "https://dido.zapto.org/bankloan##*",
         "oauth2.device.authorization.grant.enabled": "false",
         "backchannel.logout.revoke.offline.tokens": "false",
         "use.refresh.tokens": "true",
@@ -296,7 +296,7 @@
         "token.response.type.bearer.lower-case": "false"
       },
       "authenticationFlowBindingOverrides": {
-        "browser": "20213900-e874-4882-86a5-5e891311f340"
+        "browser": ""
       },
       "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,
@@ -407,10 +407,10 @@
       "alwaysDisplayInConsole": false,
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
-        "https://localhost/catalog/*"
+        "https://dido.zapto.org/catalog/*"
       ],
       "webOrigins": [
-        "https://localhost/catalog/*"
+        "https://dido.zapto.org/catalog/*"
       ],
       "notBefore": 0,
       "bearerOnly": false,
@@ -437,7 +437,7 @@
         "token.response.type.bearer.lower-case": "false"
       },
       "authenticationFlowBindingOverrides": {
-        "browser": "7ed5da3b-4cac-449f-a823-82cdd3e6382e"
+        "browser": ""
       },
       "fullScopeAllowed": true,
       "nodeReRegistrationTimeout": -1,
@@ -562,10 +562,10 @@
       "clientAuthenticatorType": "client-secret",
       "redirectUris": [
         "*",
-        "https://localhost/bank/*"
+        "https://dido.zapto.org/bank/*"
       ],
       "webOrigins": [
-        "https://localhost",
+        "https://dido.zapto.org",
         "*"
       ],
       "notBefore": 0,
@@ -581,7 +581,7 @@
       "attributes": {
         "oidc.ciba.grant.enabled": "false",
         "backchannel.logout.session.required": "true",
-        "post.logout.redirect.uris": "https://localhost/bank/#logout##*",
+        "post.logout.redirect.uris": "https://dido.zapto.org/bank/#logout##*",
         "display.on.consent.screen": "false",
         "oauth2.device.authorization.grant.enabled": "false",
         "backchannel.logout.revoke.offline.tokens": "false"

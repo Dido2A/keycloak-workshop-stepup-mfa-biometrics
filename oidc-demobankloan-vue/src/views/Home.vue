@@ -255,7 +255,7 @@ export default {
 			this.results = this.mockLoans;
 		},
 		signIn: function () {
-        	// this.$store.dispatch("auth/signin");
+        	this.$store.dispatch("auth/signin");
     	},
 		apply: function(){
 			this.dialog = true;

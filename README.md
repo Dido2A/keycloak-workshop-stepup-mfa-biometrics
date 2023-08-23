@@ -79,6 +79,9 @@ The application named **Bank Loan** portal will utilize this approach to enhance
     ```bash
     docker run -it -e NGROK_AUTHTOKEN={YOUR-TOKEN} \
         ngrok/ngrok:alpine http host.docker.internal:443
+   
+    export MY_TOKEN=" {from [nio-8001-exec-6] c.t.i.identity.oauth2.AcrClaimConverter  : Parsing JWT claims ...}" 
+    curl https://dido.zapto.org/api/api/v1/accounts -H "Authorization: Bearer $MY_TOKEN"
     ```
 
 ## Test cases

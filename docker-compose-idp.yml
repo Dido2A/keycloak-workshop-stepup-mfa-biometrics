@@ -20,7 +20,6 @@ x-keycloak-environment: &keycloak-environment
 #  KC_FEATURES: account3
   KC_PROXY: edge
 
-
 services:
   postgres:
     image: postgres:11
@@ -31,13 +30,15 @@ services:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: password
+
     ports:
       - 5432:5432
   keycloak:
     image: quay.io/keycloak/keycloak:${KC_VERSION}
     container_name: keycloak
-    command: 
-      - start-dev 
+    command:
+      - --verbose
+      - start-dev
       - --import-realm
     environment:
       << : *keycloak-environment
